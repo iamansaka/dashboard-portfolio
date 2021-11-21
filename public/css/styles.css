@@ -1,0 +1,98 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Landscape phones and down */
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  color: var(--text);
+  font-family: var(--font-family);
+}
+
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 35px;
+}
+
+h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 34px;
+}
+
+h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 33px;
+}
+
+h4 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 32px;
+}
+
+h5 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 31px;
+}
+
+h6 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+strong {
+  color: var(--accent);
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  background-color: #F8F8F8;
+  margin-bottom: 10px;
+}
+
+.auth__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  max-width: 100%;
+  width: 100%;
+}
+
+.auth__container .auth {
+  max-width: 325px;
+  width: 100%;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */

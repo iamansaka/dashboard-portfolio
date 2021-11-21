@@ -1,0 +1,36 @@
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: var(--text);
+    font-family: var(--font-family);
+}
+
+// Titre de niveau
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 36px - $i;
+    }
+}  
+
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+strong {
+    color: var(--accent);
+}
