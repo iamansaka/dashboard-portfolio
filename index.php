@@ -21,6 +21,8 @@ $router = new Router();
 
 // Define routes
 $router->get('/', '\App\Controllers\HomeController@index');
+$router->get('/works', '\App\Controllers\WorksController@index');
+$router->get('/works/{title}', '\App\Controllers\WorksController@show');
 
 // Run it!
 $router->run();
