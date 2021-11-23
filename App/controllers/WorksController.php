@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use DateTime;
 use App\Models\Works;
 
 class WorksController extends Controller
@@ -45,8 +46,9 @@ class WorksController extends Controller
                     "image" => $donnee['image'],
                     "github" => $donnee['github_link'],
                     "web" => $donnee['web_link'],
-                    "date" => $donnee['createdAt'],
+                    "date" => (new DateTime($donnee['createdAt']))->format("Y"),
                     "palettes" => [],
+                    "maquettes" => [],
                     "outils" => [],
                     "technologies" => [],
                 ];
@@ -55,6 +57,10 @@ class WorksController extends Controller
             array_push($tab[$donnee['id']]['palettes'], $donnee['color']);
             $uniquePalette = array_unique($tab[$donnee['id']]['palettes']);
             $tab[$donnee['id']]['palettes'] = $uniquePalette;
+
+            array_push($tab[$donnee['id']]['maquettes'], $donnee['image_maquette']);
+            $uniqueMaquette = array_unique($tab[$donnee['id']]['maquettes']);
+            $tab[$donnee['id']]['maquettes'] = $uniqueMaquette;
 
             array_push($tab[$donnee['id']]['outils'], $donnee['name']);
             $uniqueOutils = array_unique($tab[$donnee['id']]['outils']);
